@@ -5,7 +5,14 @@
 
 		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<link href="../css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
-		<script src="../js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="jquery.validate.js"></script>
+        <script>
+			$().ready(function(){
+				$("#contactForm").validate();
+			});
+		</script>
 
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
 		
@@ -22,63 +29,31 @@
 	      </ul>
     	</div>
 		
-                <div class="container">
-			<div>
-				<h1>Contact Form</h1>
-				<hr>
-				<table align="center">
-                <form id="contact">
-
-        <tr>
-            <td>Name</td>
-            <td><input type="text" name="name" value="" id="txtName"></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><input type="text" name="email" value="" id="txtEmail"></td>
-
-        </tr>
-        <tr>
-            <td>Comments</td>
-            <td><textarea columns="50" rows="5" name="feedback" id="txtFeedback"></textarea></td>
-        </tr>
-        
-        <tr>
-        <td>Contact</td>
-        <td>
-            Yes <input type="radio" name="contact" value="yes" checked>
-            No <input type="radio" name="contact" value="no">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="submit" value="Submit"></td>
-        </tr>
-    
-    </form>
-</div>
-		</div>
-	</body>
-	<script type="text/javascript">
-			function submitFeedback(){
-				var email = document.getElementById('txtEmail');
-				var feedback = document.getElementById('txtFeedback');
-                var name = document.getElementById('txtName');
-				var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-				
-				if(!filter.test(email.value)){
-					alert('Please provide a valid email address');
-					email.focus();
-				}
-				
-				return false;
-				
-				if(feedback.value == ''){
-					alert('Please enter feedback');
-					email.focus();
-				}
-				
-				return false;				
-			}
-	</script>
+<div class="container">
+	        <div class="col-lg-5">
+		        <h2>Registration Form</h2>
+		        <hr />
+		        <form id="contactForm" method="get">
+			        <div class="form-group">
+				        <label>First Name:</label>
+				        <input name="firstName" type="text" minlength="2" required="true" class="form-control">
+			        </div>
+			        <div class="form-group">
+				        <label>Last Name:</label>
+				        <input name="lastName" type="text" minlength="2" required="true" class="form-control">
+			        </div>
+			        <div class="form-group">
+			        	<label>Email Address:</label>
+			        	<input name="email" type="email" required="true" class="form-control">
+			        </div>
+			        <div class="form-group">
+				        <label>Message:</label>
+				        <input name="message" id="message" type="text" class="form-control">
+			        </div>
+			        <button type="submit" value="Submit" class="btn btn-lg btn-default">Submit Comment</button>
+			    </form>
+	        </div>
+        </div>
+    </body>
 </html>
 
