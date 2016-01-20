@@ -1,0 +1,93 @@
+<style>
+h1 {
+        font-family: cursive;
+        color: blue;
+        text-align: center;
+    }
+    
+    h3 {
+        font-family: sans-serif;
+        color: #66CCFF;
+    }
+    
+    p {
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    ol {
+        font-family: sans-serif;
+    }
+    
+        header {
+            text-align: center;
+            width: 1000px;  
+        }
+
+
+body {
+  text-align: center;
+  align: center;
+  background-color: whitesmoke;
+}
+
+table#contact {
+        height: auto;
+        width: auto;
+        table align-content: center;
+    }
+}
+td {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 150px;
+  font-weight: bold;
+  font-color: deeppink;
+  font-family: geniva, verdana, helvetica;
+  border: 4px solid grey;
+  background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+dt {           
+    color: #268bd2;           
+    font-weight: bold;           
+    cursor: pointer;           
+    margin: 0 0 1em 0;           
+}
+dt:hover {           
+    color: #2aa198;           
+}
+
+#faqs dt, #faqs dd { padding: 0 0 0 50px }
+#faqs dt { font-size:1.5em; color: #9d9d9d; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
+#faqs dd { font-size: 1em; margin: 0 0 20px 25px}
+#faqs dt { background: url(http://www.designonslaught.com/files/2012/06/expand-icon.png) no-repeat left}
+#faqs .expanded { background: url(http://www.designonslaught.com/files/2012/
+
+</style>
